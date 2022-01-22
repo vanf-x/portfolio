@@ -15,7 +15,14 @@ html {
 }
 
 .logo {
-  width: 10vw;
+  width: 7vw;
+  padding-bottom: 1rem;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid black;
+  transition: all 0.4s;
 }
 
 .title {
@@ -34,38 +41,39 @@ html {
 
 a {
   color: blue;
-  font-weight: bold;
 }
 
 nav {
-  background-color: #fbff01;
-  border-bottom: 1rem solid #222;
+  background-color: #222;
+  border-bottom: 1rem solid #000;
+  height: 5vh;
 }
 nav p {
   margin: 0;
   font-size: 3vw;
   padding: 1vw;
-  color: #622266;
+  color: #fff;
   font-weight: bold;
 }
 nav span {
-  color: #622266;
+  color: #222;
 }
 
 .top {
-  height: 80vh;
+  height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #04003d;
 }
 .top .top-card {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
-  height: 50%;
+  height: 70%;
   margin: 0 auto;
+  border: 1px solid #000;
+  border-radius: 25px;
 }
 .top .top-card .pic {
   width: 30%;
@@ -75,6 +83,7 @@ nav span {
   align-items: center;
   background-color: #222;
   border-radius: 2rem 0 0 2rem;
+  border-right: 1rem solid #000;
 }
 .top .top-card .pic img {
   width: 10vw;
@@ -94,7 +103,6 @@ nav span {
 }
 
 .bottom {
-  width: 80%;
   margin: 0 auto;
 }
 .bottom .bottom-white {
@@ -102,11 +110,25 @@ nav span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
   margin: 0 auto;
+}
+.bottom .bottom-white .about {
+  background-color: #222;
+  border-bottom: 1rem solid #000;
+  border-top: 1rem solid #000;
 }
 .bottom .bottom-white .about h3 {
   text-align: center;
+  color: white;
+}
+.bottom .bottom-white .about p {
+  color: white;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+.bottom .bottom-white .skills {
+  width: 60%;
 }
 .bottom .bottom-white .skills h3 {
   text-align: center;
@@ -114,12 +136,74 @@ nav span {
 .bottom .bottom-white .skills .skills-img {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 4rem;
+}
+.bottom .bottom-white .courses {
+  background-color: #222;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .bottom .bottom-white .courses h3 {
   text-align: center;
+  color: white;
+}
+.bottom .bottom-white .courses p {
+  color: white;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.bottom .bottom-white .courses ul {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+.bottom .bottom-white .courses ul li a {
+  color: skyblue;
+}
+.bottom .bottom-white .courses ul li a:hover {
+  color: blue;
+}
+.bottom .bottom-white .projects {
+  margin-bottom: 4rem;
 }
 .bottom .bottom-white .projects h3 {
   text-align: center;
+}
+.bottom .bottom-white .projects a:hover {
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #222;
+  color: white;
+}
+footer .contact {
+  display: flex;
+  align-items: center;
+}
+footer .github {
+  display: flex;
+  align-items: center;
+}
+footer .github a {
+  color: skyblue;
+}
+footer .github a:hover {
+  color: blue;
+}
+
+.footer-img {
+  width: 2vw;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
