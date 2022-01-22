@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.josefine-font {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.logo {
+  width: 10vw;
+}
+
+.title {
+  font-size: 2vw;
+}
+
+.title4 {
+  font-size: 1.5vw;
+}
+
+.par {
+  font-size: 1.5vw;
+  text-align: justify;
+  text-decoration: none;
+}
+
+a {
+  color: blue;
+  font-weight: bold;
+}
+
+nav {
+  background-color: #fbff01;
+  border-bottom: 1rem solid #222;
+}
+nav p {
+  margin: 0;
+  font-size: 3vw;
+  padding: 1vw;
+  color: #622266;
+  font-weight: bold;
+}
+nav span {
+  color: #622266;
+}
+
+.top {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #04003d;
+}
+.top .top-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 50%;
+  margin: 0 auto;
+}
+.top .top-card .pic {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  border-radius: 2rem 0 0 2rem;
+}
+.top .top-card .pic img {
+  width: 10vw;
+  border-radius: 9rem;
+}
+.top .top-card .bio {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 2rem 2rem 0;
+  background-color: #fff;
+  height: 100%;
+}
+.top .top-card .bio .bio-text {
+  padding: 2vw;
+}
+
+.bottom {
+  width: 80%;
+  margin: 0 auto;
+}
+.bottom .bottom-white {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.bottom .bottom-white .about h3 {
+  text-align: center;
+}
+.bottom .bottom-white .skills h3 {
+  text-align: center;
+}
+.bottom .bottom-white .skills .skills-img {
+  display: flex;
+  justify-content: space-around;
+}
+.bottom .bottom-white .courses h3 {
+  text-align: center;
+}
+.bottom .bottom-white .projects h3 {
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

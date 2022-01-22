@@ -1,0 +1,125 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Source+Code+Pro:wght@500&display=swap");
+.josefine-font {
+  font-family: "Josefin Sans", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.logo {
+  width: 10vw;
+}
+.title {
+  font-size: 2vw;
+}
+.title4 {
+  font-size: 1.5vw;
+}
+.par {
+  font-size: 1.5vw;
+  text-align: justify;
+  text-decoration: none;
+}
+a {
+  color: blue;
+  font-weight: bold;
+}
+nav {
+  background-color: rgb(251, 255, 1);
+  border-bottom: 1rem solid #222;
+  p {
+    margin: 0;
+    font-size: 3vw;
+    padding: 1vw;
+color: #622266;
+
+
+    font-weight: bold;
+  }
+  span {
+    color: #622266;
+  }
+}
+.top {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(4, 0, 61);
+  .top-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    .pic {
+      width: 30%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #222;
+      border-radius: 2rem 0 0 2rem;
+      img {
+        width: 10vw;
+        border-radius: 9rem;
+      }
+    }
+    .bio {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 2rem 2rem 0;
+      background-color: #fff;
+      height: 100%;
+
+      .bio-text {
+        padding: 2vw;
+      }
+    }
+  }
+}
+.bottom {
+  width: 80%;
+  margin: 0 auto;
+  .bottom-white {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    .about {
+      h3 {
+        text-align: center;
+      }
+    }
+    .skills {
+      h3 {
+        text-align: center;
+      }
+      .skills-img {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+    .courses {
+      h3 {
+        text-align: center;
+      }
+    }
+    .projects {
+      h3 {
+        text-align: center;
+      }
+    }
+  }
+}
