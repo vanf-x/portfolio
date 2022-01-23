@@ -16,11 +16,6 @@ html {
   width: 7vw;
   padding-bottom: 1rem;
 }
-.logo:hover {
-  transform: scale(1.1);
-  border-bottom: 1px solid black;
-  transition: all 0.4s;
-}
 .title {
   font-size: 2.5vw;
 }
@@ -144,6 +139,8 @@ nav {
         margin: 0 auto;
         margin-bottom: 4rem;
         li {
+        padding: 2rem;
+
           a {
             color: skyblue;
           }

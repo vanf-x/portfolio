@@ -19,12 +19,6 @@ html {
   padding-bottom: 1rem;
 }
 
-.logo:hover {
-  transform: scale(1.1);
-  border-bottom: 1px solid black;
-  transition: all 0.4s;
-}
-
 .title {
   font-size: 2.5vw;
 }
@@ -143,6 +137,9 @@ nav span {
 .bottom .bottom-white .courses ul {
   margin: 0 auto;
   margin-bottom: 4rem;
+}
+.bottom .bottom-white .courses ul li {
+  padding: 2rem;
 }
 .bottom .bottom-white .courses ul li a {
   color: skyblue;
