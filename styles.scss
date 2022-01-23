@@ -16,19 +16,19 @@ html {
   width: 7vw;
   padding-bottom: 1rem;
 }
-.logo:hover{
+.logo:hover {
   transform: scale(1.1);
   border-bottom: 1px solid black;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 .title {
-  font-size: 2vw;
+  font-size: 2.5vw;
 }
 .title4 {
-  font-size: 1.5vw;
+  font-size: 2vw;
 }
 .par {
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: justify;
   text-decoration: none;
 }
@@ -53,49 +53,31 @@ nav {
   }
 }
 .top {
-  height: 60vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(./back.jpg);
+  background-size: cover;
+  background-attachment: fixed;
   // background-color: rgb(4, 0, 61);
-  .top-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 70%;
-    margin: 0 auto;
-    border: 1px solid #000;
-    border-radius: 25px;
-    .pic {
-      width: 30%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #222;
-      border-radius: 2rem 0 0 2rem;
-      border-right: 1rem solid #000;
-      img {
-        width: 10vw;
-        border-radius: 9rem;
-      }
-    }
+
     .bio {
-      width: 70%;
+      width: 80%;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: 0 2rem 2rem 0;
-      background-color: #fff;
-      height: 100%;
+      border: 1px solid black;
+      // border-radius: 0 2rem 2rem 0;
+      background-color: rgba(255, 255, 255, 0.829);
+      height: 70%;
+      padding: 1rem;
 
       .bio-text {
         padding: 2vw;
       }
     }
   }
-}
 .bottom {
   // width: 80%;
   margin: 0 auto;
@@ -107,6 +89,10 @@ nav {
     // width: 80%;
     margin: 0 auto;
     .about {
+      padding: 2rem;
+      background-color: #222;
+      border-bottom: 1rem solid #000;
+      border-top: 1rem solid #000;
       h3 {
         text-align: center;
         color: white;
@@ -117,9 +103,6 @@ nav {
         margin: 0 auto;
         padding-bottom: 2rem;
       }
-      background-color: #222;
-      border-bottom: 1rem solid #000;
-      border-top: 1rem solid #000;
     }
     .skills {
       width: 60%;
@@ -130,6 +113,7 @@ nav {
       .skills-img {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         margin-bottom: 4rem;
       }
     }
@@ -142,6 +126,7 @@ nav {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      padding: 2rem;
 
       h3 {
         text-align: center;
@@ -169,10 +154,11 @@ nav {
       }
     }
     .projects {
+      padding: 2rem;
       h3 {
         text-align: center;
       }
-      a:hover{
+      a:hover {
         font-weight: bold;
       }
       margin-bottom: 4rem;
@@ -187,22 +173,70 @@ footer {
   align-items: center;
   background-color: #222;
   color: white;
-  .contact{
+  .contact {
     display: flex;
     align-items: center;
   }
-  .github{
+  .linkedin {
     display: flex;
     align-items: center;
-    a{
-color: skyblue;
+    a {
+      color: skyblue;
     }
-    a:hover{
-color: blue;
+    a:hover {
+      color: blue;
+    }
+  }
+  .github {
+    display: flex;
+    align-items: center;
+
+    a {
+      color: skyblue;
+    }
+    a:hover {
+      color: blue;
     }
   }
 }
-.footer-img{
+.footer-img {
   width: 2vw;
+  min-width: 2rem;
   margin-right: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .par {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+  .title4 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+
+}
+@media only screen and (max-width: 600px) {
+  .top{
+    .bio{
+      .bio-text{
+        h3{font-size: 2rem;}
+        h4{font-size: 243m;}
+      }
+    }
+  }
+
+  .logo {
+    width: 12vw;
+    padding-bottom: 1rem;
+    margin: 0 1rem;
+  }
+}
+@media only screen and (max-width: 486px) {
+  footer{
+    flex-direction: column;
+  }
 }
