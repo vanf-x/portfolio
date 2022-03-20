@@ -16,6 +16,18 @@ html {
   width: 7vw;
   padding-bottom: 1rem;
 }
+.a-nav{
+  color: skyblue;
+  font-size: 3vw;
+  padding-right: 3rem;
+  padding: 2rem;
+  text-decoration: none;
+  border-left: 1rem solid #000;
+  background-color: #444;
+}
+.a-nav:hover{
+  color: blue;
+}
 .title {
   font-size: 2.5vw;
 }
@@ -31,9 +43,11 @@ a {
   color: blue;
   // font-weight: bold;
 }
-nav {
+.nav {
   background-color: #222;
   border-bottom: 1rem solid #000;
+  display: flex;
+  justify-content: flex-end;
   height: 5vh;
   p {
     margin: 0;
@@ -210,6 +224,9 @@ footer {
     font-size: 2.5rem;
   }
   .title4 {
+    font-size: 2.5rem;
+  }
+  .a-nav{
     font-size: 2.5rem;
   }
 }
